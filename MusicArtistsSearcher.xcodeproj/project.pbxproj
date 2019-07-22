@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BBB6F3622E65408007D9D2A /* MusicArtistsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB6F3522E65408007D9D2A /* MusicArtistsSearchViewController.swift */; };
 		8BFCE1A722E6504E00B1FD34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1A622E6504E00B1FD34 /* AppDelegate.swift */; };
 		8BFCE1A922E6504E00B1FD34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1A822E6504E00B1FD34 /* ViewController.swift */; };
 		8BFCE1AC22E6504E00B1FD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCE1AA22E6504E00B1FD34 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BBB6F3522E65408007D9D2A /* MusicArtistsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearchViewController.swift; sourceTree = "<group>"; };
 		8BFCE1A322E6504E00B1FD34 /* MusicArtistsSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicArtistsSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFCE1A622E6504E00B1FD34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFCE1A822E6504E00B1FD34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BBB6F3122E652D4007D9D2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BFCE1AD22E6504F00B1FD34 /* Assets.xcassets */,
+				8BBB6F3322E6534F007D9D2A /* Base */,
+				8BFCE1B222E6504F00B1FD34 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BBB6F3322E6534F007D9D2A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8BFCE1AA22E6504E00B1FD34 /* Main.storyboard */,
+				8BFCE1AF22E6504F00B1FD34 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8BBB6F3422E653DA007D9D2A /* MusicArtistsSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB6F3522E65408007D9D2A /* MusicArtistsSearchViewController.swift */,
+			);
+			path = MusicArtistsSearch;
+			sourceTree = "<group>";
+		};
 		8BFCE19A22E6504E00B1FD34 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +106,10 @@
 		8BFCE1A522E6504E00B1FD34 /* MusicArtistsSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				8BBB6F3422E653DA007D9D2A /* MusicArtistsSearch */,
+				8BBB6F3122E652D4007D9D2A /* Resources */,
 				8BFCE1A622E6504E00B1FD34 /* AppDelegate.swift */,
 				8BFCE1A822E6504E00B1FD34 /* ViewController.swift */,
-				8BFCE1AA22E6504E00B1FD34 /* Main.storyboard */,
-				8BFCE1AD22E6504F00B1FD34 /* Assets.xcassets */,
-				8BFCE1AF22E6504F00B1FD34 /* LaunchScreen.storyboard */,
-				8BFCE1B222E6504F00B1FD34 /* Info.plist */,
 			);
 			path = MusicArtistsSearcher;
 			sourceTree = "<group>";
@@ -197,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBB6F3622E65408007D9D2A /* MusicArtistsSearchViewController.swift in Sources */,
 				8BFCE1A922E6504E00B1FD34 /* ViewController.swift in Sources */,
 				8BFCE1A722E6504E00B1FD34 /* AppDelegate.swift in Sources */,
 			);
@@ -361,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MusicArtistsSearcher/Info.plist;
+				INFOPLIST_FILE = MusicArtistsSearcher/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MusicArtistsSearcher/Info.plist;
+				INFOPLIST_FILE = MusicArtistsSearcher/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
