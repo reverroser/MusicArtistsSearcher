@@ -30,6 +30,7 @@ class MusicArtistsViewController: UIViewController {
     
     private func setupProperties() {
         tableView.register(TableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
         navigationItem.title = "Search"
         navigationItem.hidesSearchBarWhenScrolling = false
