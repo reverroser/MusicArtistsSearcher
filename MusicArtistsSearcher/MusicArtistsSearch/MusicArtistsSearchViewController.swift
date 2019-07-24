@@ -56,6 +56,7 @@ class MusicArtistsViewController: UIViewController {
             }
             .bind(to: tableView.rx.items(cellIdentifier: cellIdentifier)) { index, model, cell in
                 cell.textLabel?.text = model.artistName
+                cell.detailTextLabel?.text = model.primaryGenreName
                 cell.textLabel?.adjustsFontSizeToFitWidth = true
             }
             .disposed(by: disposeBag)

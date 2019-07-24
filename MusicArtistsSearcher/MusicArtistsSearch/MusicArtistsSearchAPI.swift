@@ -15,7 +15,7 @@ class MusicArtistsSearchAPI {
 
     func searchMusicArtists(searchText: String) -> Observable<[MusicArtist]> {
         return Observable<[MusicArtist]>.create { [unowned self] observer in
-            self.apiClient.fetch(apiRequest: MusicArtistsSearchRequest(term: searchText))
+            self.apiClient.fetch(apiRequest: MusicArtistsSearchRequest(term: searchText.lowercased()))
                 .subscribe(
                     onNext: { data in
                         observer.onNext(data.results!)

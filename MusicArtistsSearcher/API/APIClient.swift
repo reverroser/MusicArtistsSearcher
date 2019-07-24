@@ -18,7 +18,8 @@ class APIClient<T: Decodable> {
             print(request)
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 do {
-                    let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
+                    guard let data = data, data.count > 0 else { return }
+                    let model: T = try JSONDecoder().decode(T.self, from: data )
                     observer.onNext(model)
                 } catch let error {
                     observer.onError(error)

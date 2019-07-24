@@ -9,5 +9,12 @@
 import Foundation
 
 struct MusicArtist: Codable {
-    var artistName: String
+    let artistName: String
+    let primaryGenreName: String
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.artistName = try container.decodeIfPresent(String.self, forKey: .artistName) ?? ""
+        self.primaryGenreName = try container.decodeIfPresent(String.self, forKey: .primaryGenreName) ?? "undefined"
+    }
 }
