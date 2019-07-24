@@ -6,10 +6,14 @@ target 'MusicArtistsSearcher' do
   use_frameworks!
 
   # Pods for MusicArtistsSearcher
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
   target 'MusicArtistsSearcherTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
   end
 
 end
