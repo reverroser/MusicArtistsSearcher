@@ -15,7 +15,6 @@ class APIClient<T: Decodable> {
     func fetch(apiRequest: APIRequest) -> Observable<T> {
         return Observable<T>.create { [unowned self] observer in
             let request = apiRequest.request(with: self.baseURL)
-            print(request)
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 do {
                     guard let data = data, data.count > 0 else { return }

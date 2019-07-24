@@ -8,6 +8,7 @@ target 'MusicArtistsSearcher' do
   # Pods for MusicArtistsSearcher
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'RealmSwift'
 
   target 'MusicArtistsSearcherTests' do
     inherit! :search_paths

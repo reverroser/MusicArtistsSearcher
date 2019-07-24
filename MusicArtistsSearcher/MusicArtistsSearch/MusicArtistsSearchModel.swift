@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct MusicArtist: Codable {
     let artistName: String
@@ -17,4 +18,8 @@ struct MusicArtist: Codable {
         self.artistName = try container.decodeIfPresent(String.self, forKey: .artistName) ?? ""
         self.primaryGenreName = try container.decodeIfPresent(String.self, forKey: .primaryGenreName) ?? "undefined"
     }
+}
+
+class MusicSearchSearchTerm: Object {
+    @objc dynamic var term = ""
 }

@@ -7,7 +7,7 @@
 //
 
 struct APIRepsonse<T: Codable>: Decodable {
-    var resultCount: Int?
+    var resultsCount: Int?
     var results: [T]?
 }
 

@@ -8,12 +8,14 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RealmSwift
 
 class MusicArtistsViewController: UIViewController {
     private let tableView = UITableView()
     private let cellIdentifier = "cellIdentifier"
     private let searchApi = MusicArtistsSearchAPI()
     private let disposeBag = DisposeBag()
+    let realm = try! Realm()
     
     private let searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
@@ -60,5 +62,14 @@ class MusicArtistsViewController: UIViewController {
                 cell.textLabel?.adjustsFontSizeToFitWidth = true
             }
             .disposed(by: disposeBag)
+        
+        searchController.searchBar.rx.cancelButtonClicked
+            .subscribe(onNext: { () in
+                let searchTerm = MusicSearchSearchTerm(value: [self.searchController.searchBar.text])
+                try! self.realm.write {
+                    self.realm.add(searchTerm)
+                }
+            })
+            .disposed(by: self.disposeBag)
     }
 }
