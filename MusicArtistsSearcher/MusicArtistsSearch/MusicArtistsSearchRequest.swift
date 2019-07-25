@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 
+// This class builds the request for the search
 class MusicArtistsSearchRequest: APIRequest {
     var method = RequestType.GET
     var path = "search"

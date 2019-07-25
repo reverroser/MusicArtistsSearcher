@@ -22,6 +22,6 @@ struct MusicArtist: Codable {
     }
 }
 
-class MusicSearchSearchTerm: Object {
+class MusicArtistSearchTerm: Object {
     @objc dynamic var term = ""
 }

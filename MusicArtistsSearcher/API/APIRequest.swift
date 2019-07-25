@@ -18,6 +18,7 @@ protocol APIRequest {
     var parameters: [String : String] { get }
 }
 
+// This generates the request model
 extension APIRequest {
     func request(with baseURL: URL) -> URLRequest {
         guard var components = URLComponents(url: baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: false) else {

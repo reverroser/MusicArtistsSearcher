@@ -63,15 +63,17 @@ class MusicArtistsViewController: UIViewController {
             }
             .disposed(by: disposeBag)
         
+        // This observer stores the last search term into RealmDB to allow us to show them in the main screen
         searchController.searchBar.rx.cancelButtonClicked
             .subscribe(onNext: { () in
-                let searchTerm = MusicSearchSearchTerm(value: [self.searchController.searchBar.text])
+                let searchTerm = MusicArtistSearchTerm(value: [self.searchController.searchBar.text])
                 try! self.realm.write {
                     self.realm.add(searchTerm)
                 }
             })
             .disposed(by: self.disposeBag)
         
+        // On cell selected the Artist URL is generated to be opened in the browser
         tableView.rx.modelSelected(MusicArtist.self)
             .subscribe(onNext: { model in
                 guard let url = URL(string: model.artistLinkUrl) else { return }

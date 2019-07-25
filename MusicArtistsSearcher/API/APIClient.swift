@@ -12,6 +12,10 @@ import RxSwift
 class APIClient<T: Decodable> {
     private let baseURL = URL(string: "https://itunes.apple.com/")!
     
+    /*
+     * This function does a GET request to the Itunes API
+     * T is equal to the data model of the response. Example: [MusicArtist]
+     */
     func fetch(apiRequest: APIRequest) -> Observable<T> {
         return Observable<T>.create { [unowned self] observer in
             let request = apiRequest.request(with: self.baseURL)
