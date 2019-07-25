@@ -34,7 +34,7 @@ class MusicArtistsViewController: UIViewController {
         tableView.register(TableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
-        navigationItem.title = "Search"
+        navigationItem.title = "Music artists searcher"
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationController?.navigationBar.prefersLargeTitles = true
     }
