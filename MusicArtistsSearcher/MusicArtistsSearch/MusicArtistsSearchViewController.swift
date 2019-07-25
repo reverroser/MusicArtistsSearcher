@@ -71,5 +71,12 @@ class MusicArtistsViewController: UIViewController {
                 }
             })
             .disposed(by: self.disposeBag)
+        
+        tableView.rx.modelSelected(MusicArtist.self)
+            .subscribe(onNext: { model in
+                guard let url = URL(string: model.artistLinkUrl) else { return }
+                UIApplication.shared.open(url)
+            })
+            .disposed(by: disposeBag)
     }
 }
