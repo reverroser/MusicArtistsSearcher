@@ -3,16 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81B7C238F103B05F9C8DE9E4 /* Pods_MusicArtistsSearcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFA70C71EBC2BF4E6AA83AE /* Pods_MusicArtistsSearcherTests.framework */; };
+		8B05065122E786AD00103A78 /* MusicArtistsSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05065022E786AD00103A78 /* MusicArtistsSearchRequest.swift */; };
+		8B05065322E787E000103A78 /* MusicArtistsSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05065222E787E000103A78 /* MusicArtistsSearchModel.swift */; };
+		8B05065622E78F7400103A78 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05065522E78F7400103A78 /* APIRequest.swift */; };
+		8B05065822E7A00400103A78 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05065722E7A00400103A78 /* APIClient.swift */; };
+		8B05065A22E7A0D100103A78 /* MusicArtistsSearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05065922E7A0D100103A78 /* MusicArtistsSearchTableCell.swift */; };
+		8B05065C22E8227D00103A78 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05065B22E8227D00103A78 /* APIResponse.swift */; };
+		8B05065E22E830FE00103A78 /* MusicArtistsSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B05065D22E830FE00103A78 /* MusicArtistsSearchAPI.swift */; };
+		8BBB6F3622E65408007D9D2A /* MusicArtistsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB6F3522E65408007D9D2A /* MusicArtistsSearchViewController.swift */; };
 		8BFCE1A722E6504E00B1FD34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1A622E6504E00B1FD34 /* AppDelegate.swift */; };
 		8BFCE1A922E6504E00B1FD34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1A822E6504E00B1FD34 /* ViewController.swift */; };
 		8BFCE1AC22E6504E00B1FD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCE1AA22E6504E00B1FD34 /* Main.storyboard */; };
 		8BFCE1AE22E6504F00B1FD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCE1AD22E6504F00B1FD34 /* Assets.xcassets */; };
 		8BFCE1B122E6504F00B1FD34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCE1AF22E6504F00B1FD34 /* LaunchScreen.storyboard */; };
-		8BFCE1BC22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1BB22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift */; };
+		8BFCE1BC22E6504F00B1FD34 /* SearchRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1BB22E6504F00B1FD34 /* SearchRequestTests.swift */; };
+		9BC33773AF68E434FAB13B2A /* Pods_MusicArtistsSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D421164E6EB0E085DF240F8E /* Pods_MusicArtistsSearcher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B05065022E786AD00103A78 /* MusicArtistsSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearchRequest.swift; sourceTree = "<group>"; };
+		8B05065222E787E000103A78 /* MusicArtistsSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearchModel.swift; sourceTree = "<group>"; };
+		8B05065522E78F7400103A78 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		8B05065722E7A00400103A78 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		8B05065922E7A0D100103A78 /* MusicArtistsSearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearchTableCell.swift; sourceTree = "<group>"; };
+		8B05065B22E8227D00103A78 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		8B05065D22E830FE00103A78 /* MusicArtistsSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearchAPI.swift; sourceTree = "<group>"; };
+		8BBB6F3522E65408007D9D2A /* MusicArtistsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearchViewController.swift; sourceTree = "<group>"; };
 		8BFCE1A322E6504E00B1FD34 /* MusicArtistsSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicArtistsSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFCE1A622E6504E00B1FD34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFCE1A822E6504E00B1FD34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +52,14 @@
 		8BFCE1B022E6504F00B1FD34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BFCE1B222E6504F00B1FD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BFCE1B722E6504F00B1FD34 /* MusicArtistsSearcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicArtistsSearcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BFCE1BB22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearcherTests.swift; sourceTree = "<group>"; };
+		8BFCE1BB22E6504F00B1FD34 /* SearchRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestTests.swift; sourceTree = "<group>"; };
 		8BFCE1BD22E6504F00B1FD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E5FD2035F16C694A3373B6 /* Pods-MusicArtistsSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicArtistsSearcher.debug.xcconfig"; path = "Target Support Files/Pods-MusicArtistsSearcher/Pods-MusicArtistsSearcher.debug.xcconfig"; sourceTree = "<group>"; };
+		9517F2CF98C0B29A71E5F4AC /* Pods-MusicArtistsSearcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicArtistsSearcherTests.release.xcconfig"; path = "Target Support Files/Pods-MusicArtistsSearcherTests/Pods-MusicArtistsSearcherTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABFA70C71EBC2BF4E6AA83AE /* Pods_MusicArtistsSearcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicArtistsSearcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11A5E00EB49AF68ACCB6C84 /* Pods-MusicArtistsSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicArtistsSearcher.release.xcconfig"; path = "Target Support Files/Pods-MusicArtistsSearcher/Pods-MusicArtistsSearcher.release.xcconfig"; sourceTree = "<group>"; };
+		D421164E6EB0E085DF240F8E /* Pods_MusicArtistsSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicArtistsSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5419FCA6DB921F076C5B78 /* Pods-MusicArtistsSearcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicArtistsSearcherTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicArtistsSearcherTests/Pods-MusicArtistsSearcherTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC33773AF68E434FAB13B2A /* Pods_MusicArtistsSearcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +75,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B7C238F103B05F9C8DE9E4 /* Pods_MusicArtistsSearcherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DEDBBE84BB048288DEA2A2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D421164E6EB0E085DF240F8E /* Pods_MusicArtistsSearcher.framework */,
+				ABFA70C71EBC2BF4E6AA83AE /* Pods_MusicArtistsSearcherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		809368B08AA3C9B95B33B1A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93E5FD2035F16C694A3373B6 /* Pods-MusicArtistsSearcher.debug.xcconfig */,
+				B11A5E00EB49AF68ACCB6C84 /* Pods-MusicArtistsSearcher.release.xcconfig */,
+				EC5419FCA6DB921F076C5B78 /* Pods-MusicArtistsSearcherTests.debug.xcconfig */,
+				9517F2CF98C0B29A71E5F4AC /* Pods-MusicArtistsSearcherTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B05065422E78F3700103A78 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8B05065522E78F7400103A78 /* APIRequest.swift */,
+				8B05065722E7A00400103A78 /* APIClient.swift */,
+				8B05065B22E8227D00103A78 /* APIResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8BBB6F3122E652D4007D9D2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BFCE1AD22E6504F00B1FD34 /* Assets.xcassets */,
+				8BBB6F3322E6534F007D9D2A /* Base */,
+				8BFCE1B222E6504F00B1FD34 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BBB6F3322E6534F007D9D2A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8BFCE1AA22E6504E00B1FD34 /* Main.storyboard */,
+				8BFCE1AF22E6504F00B1FD34 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8BBB6F3422E653DA007D9D2A /* MusicArtistsSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB6F3522E65408007D9D2A /* MusicArtistsSearchViewController.swift */,
+				8B05065022E786AD00103A78 /* MusicArtistsSearchRequest.swift */,
+				8B05065222E787E000103A78 /* MusicArtistsSearchModel.swift */,
+				8B05065922E7A0D100103A78 /* MusicArtistsSearchTableCell.swift */,
+				8B05065D22E830FE00103A78 /* MusicArtistsSearchAPI.swift */,
+			);
+			path = MusicArtistsSearch;
+			sourceTree = "<group>";
+		};
 		8BFCE19A22E6504E00B1FD34 = {
 			isa = PBXGroup;
 			children = (
 				8BFCE1A522E6504E00B1FD34 /* MusicArtistsSearcher */,
 				8BFCE1BA22E6504F00B1FD34 /* MusicArtistsSearcherTests */,
 				8BFCE1A422E6504E00B1FD34 /* Products */,
+				809368B08AA3C9B95B33B1A9 /* Pods */,
+				4DEDBBE84BB048288DEA2A2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +166,11 @@
 		8BFCE1A522E6504E00B1FD34 /* MusicArtistsSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				8B05065422E78F3700103A78 /* API */,
+				8BBB6F3422E653DA007D9D2A /* MusicArtistsSearch */,
+				8BBB6F3122E652D4007D9D2A /* Resources */,
 				8BFCE1A622E6504E00B1FD34 /* AppDelegate.swift */,
 				8BFCE1A822E6504E00B1FD34 /* ViewController.swift */,
-				8BFCE1AA22E6504E00B1FD34 /* Main.storyboard */,
-				8BFCE1AD22E6504F00B1FD34 /* Assets.xcassets */,
-				8BFCE1AF22E6504F00B1FD34 /* LaunchScreen.storyboard */,
-				8BFCE1B222E6504F00B1FD34 /* Info.plist */,
 			);
 			path = MusicArtistsSearcher;
 			sourceTree = "<group>";
@@ -90,7 +178,7 @@
 		8BFCE1BA22E6504F00B1FD34 /* MusicArtistsSearcherTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BFCE1BB22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift */,
+				8BFCE1BB22E6504F00B1FD34 /* SearchRequestTests.swift */,
 				8BFCE1BD22E6504F00B1FD34 /* Info.plist */,
 			);
 			path = MusicArtistsSearcherTests;
@@ -103,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BFCE1C022E6504F00B1FD34 /* Build configuration list for PBXNativeTarget "MusicArtistsSearcher" */;
 			buildPhases = (
+				6BB1C1F7350C91BE0957A609 /* [CP] Check Pods Manifest.lock */,
 				8BFCE19F22E6504E00B1FD34 /* Sources */,
 				8BFCE1A022E6504E00B1FD34 /* Frameworks */,
 				8BFCE1A122E6504E00B1FD34 /* Resources */,
+				06EBC97C83D3B9F8415F819A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BFCE1C322E6504F00B1FD34 /* Build configuration list for PBXNativeTarget "MusicArtistsSearcherTests" */;
 			buildPhases = (
+				482808BD724561126731F9C4 /* [CP] Check Pods Manifest.lock */,
 				8BFCE1B322E6504F00B1FD34 /* Sources */,
 				8BFCE1B422E6504F00B1FD34 /* Frameworks */,
 				8BFCE1B522E6504F00B1FD34 /* Resources */,
+				C753CD767F94BCC0079F6A40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,13 +284,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06EBC97C83D3B9F8415F819A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicArtistsSearcher/Pods-MusicArtistsSearcher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicArtistsSearcher/Pods-MusicArtistsSearcher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicArtistsSearcher/Pods-MusicArtistsSearcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		482808BD724561126731F9C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicArtistsSearcherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BB1C1F7350C91BE0957A609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicArtistsSearcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C753CD767F94BCC0079F6A40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicArtistsSearcherTests/Pods-MusicArtistsSearcherTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicArtistsSearcherTests/Pods-MusicArtistsSearcherTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicArtistsSearcherTests/Pods-MusicArtistsSearcherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BFCE19F22E6504E00B1FD34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B05065322E787E000103A78 /* MusicArtistsSearchModel.swift in Sources */,
+				8B05065E22E830FE00103A78 /* MusicArtistsSearchAPI.swift in Sources */,
+				8B05065C22E8227D00103A78 /* APIResponse.swift in Sources */,
+				8BBB6F3622E65408007D9D2A /* MusicArtistsSearchViewController.swift in Sources */,
+				8B05065122E786AD00103A78 /* MusicArtistsSearchRequest.swift in Sources */,
 				8BFCE1A922E6504E00B1FD34 /* ViewController.swift in Sources */,
+				8B05065822E7A00400103A78 /* APIClient.swift in Sources */,
+				8B05065622E78F7400103A78 /* APIRequest.swift in Sources */,
 				8BFCE1A722E6504E00B1FD34 /* AppDelegate.swift in Sources */,
+				8B05065A22E7A0D100103A78 /* MusicArtistsSearchTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BFCE1BC22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift in Sources */,
+				8BFCE1BC22E6504F00B1FD34 /* SearchRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +539,11 @@
 		};
 		8BFCE1C122E6504F00B1FD34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E5FD2035F16C694A3373B6 /* Pods-MusicArtistsSearcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MusicArtistsSearcher/Info.plist;
+				INFOPLIST_FILE = MusicArtistsSearcher/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,10 +557,11 @@
 		};
 		8BFCE1C222E6504F00B1FD34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11A5E00EB49AF68ACCB6C84 /* Pods-MusicArtistsSearcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MusicArtistsSearcher/Info.plist;
+				INFOPLIST_FILE = MusicArtistsSearcher/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +575,7 @@
 		};
 		8BFCE1C422E6504F00B1FD34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5419FCA6DB921F076C5B78 /* Pods-MusicArtistsSearcherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +596,7 @@
 		};
 		8BFCE1C522E6504F00B1FD34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9517F2CF98C0B29A71E5F4AC /* Pods-MusicArtistsSearcherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
