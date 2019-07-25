@@ -21,7 +21,7 @@
 		8BFCE1AC22E6504E00B1FD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCE1AA22E6504E00B1FD34 /* Main.storyboard */; };
 		8BFCE1AE22E6504F00B1FD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCE1AD22E6504F00B1FD34 /* Assets.xcassets */; };
 		8BFCE1B122E6504F00B1FD34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCE1AF22E6504F00B1FD34 /* LaunchScreen.storyboard */; };
-		8BFCE1BC22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1BB22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift */; };
+		8BFCE1BC22E6504F00B1FD34 /* SearchRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE1BB22E6504F00B1FD34 /* SearchRequestTests.swift */; };
 		9BC33773AF68E434FAB13B2A /* Pods_MusicArtistsSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D421164E6EB0E085DF240F8E /* Pods_MusicArtistsSearcher.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,7 @@
 		8BFCE1B022E6504F00B1FD34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BFCE1B222E6504F00B1FD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BFCE1B722E6504F00B1FD34 /* MusicArtistsSearcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicArtistsSearcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BFCE1BB22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtistsSearcherTests.swift; sourceTree = "<group>"; };
+		8BFCE1BB22E6504F00B1FD34 /* SearchRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestTests.swift; sourceTree = "<group>"; };
 		8BFCE1BD22E6504F00B1FD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93E5FD2035F16C694A3373B6 /* Pods-MusicArtistsSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicArtistsSearcher.debug.xcconfig"; path = "Target Support Files/Pods-MusicArtistsSearcher/Pods-MusicArtistsSearcher.debug.xcconfig"; sourceTree = "<group>"; };
 		9517F2CF98C0B29A71E5F4AC /* Pods-MusicArtistsSearcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicArtistsSearcherTests.release.xcconfig"; path = "Target Support Files/Pods-MusicArtistsSearcherTests/Pods-MusicArtistsSearcherTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		8BFCE1BA22E6504F00B1FD34 /* MusicArtistsSearcherTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BFCE1BB22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift */,
+				8BFCE1BB22E6504F00B1FD34 /* SearchRequestTests.swift */,
 				8BFCE1BD22E6504F00B1FD34 /* Info.plist */,
 			);
 			path = MusicArtistsSearcherTests;
@@ -387,7 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BFCE1BC22E6504F00B1FD34 /* MusicArtistsSearcherTests.swift in Sources */,
+				8BFCE1BC22E6504F00B1FD34 /* SearchRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

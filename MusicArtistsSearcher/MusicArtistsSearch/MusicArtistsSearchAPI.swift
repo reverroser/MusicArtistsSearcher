@@ -13,6 +13,7 @@ class MusicArtistsSearchAPI {
     let apiClient = APIClient<APIRepsonse<MusicArtist>>()
     private let disposeBag = DisposeBag()
 
+    // TODO TEST check if the request returns a list of MusicArtist
     func searchMusicArtists(searchText: String) -> Observable<[MusicArtist]> {
         return Observable<[MusicArtist]>.create { [unowned self] observer in
             self.apiClient.fetch(apiRequest: MusicArtistsSearchRequest(term: searchText.lowercased()))
