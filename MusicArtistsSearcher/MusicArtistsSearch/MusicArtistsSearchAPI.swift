@@ -33,3 +33,27 @@ class MusicArtistsSearchAPI {
         }
     }
 }
+
+// MARK: - Some implementation that you might consider
+
+enum SomeError: Error {
+    case searchError
+}
+
+protocol MusicArtistsFetcher {}
+
+extension MusicArtistsFetcher where Self: APIClientProtocol {
+    
+    func searchMusicArtists(searchText: String) -> Observable<[MusicArtist]> {
+        
+        // the implemetation i was talking about on the meeting!
+        
+        return send(apiRequest: MusicArtistsSearchRequest(term: searchText.lowercased()))
+            .map { (data: APIRepsonse<MusicArtist>) -> [MusicArtist] in
+                guard let result = data.results else {
+                    throw SomeError.searchError
+                }
+                return result
+            }.catchErrorJustReturn([])
+    }
+}
