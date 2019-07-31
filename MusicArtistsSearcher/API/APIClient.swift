@@ -37,3 +37,39 @@ class APIClient<T: Decodable> {
         }
     }
 }
+
+// MARK: - Some implementation that you might consider
+
+protocol APIClientProtocol {}
+
+extension APIClientProtocol {
+    
+    var baseURL: URL {
+        return URL(string: "https://itunes.apple.com/")!
+    }
+    
+    /*
+     * This function does a GET request to the Itunes API
+     * T is equal to the data model of the response. Example: [MusicArtist]
+     */
+    func send<T: Decodable>(apiRequest: APIRequest) -> Observable<T> {
+        return Observable<T>.create { observer in
+            let request = apiRequest.request(with: self.baseURL)
+            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                do {
+                    guard let data = data, data.count > 0 else { return }
+                    let model: T = try JSONDecoder().decode(T.self, from: data )
+                    observer.onNext(model)
+                } catch let error {
+                    observer.onError(error)
+                }
+                observer.onCompleted()
+            }
+            task.resume()
+            
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+    }
+}
